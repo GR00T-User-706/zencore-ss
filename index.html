@@ -1,25 +1,67 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ZENCORE SS!!! THE WEBSITE</title>
-  <style>
-    body { background: lime; color: red; font-family: "Comic Sans MS", cursive; margin: 0; }
-    marquee { background: yellow; color: blue; font-size: 40px; font-weight: bold; }
-    .box { margin: 40px; padding: 30px; border: 12px dashed purple; background: orange; transform: rotate(-2deg); }
-    h1 { font-size: 72px; text-shadow: 5px 5px cyan; }
-    button { font-size: 30px; background: hotpink; color: navy; border: 8px groove blue; padding: 20px; cursor: pointer; }
-  </style>
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="ZenCore Systems & Security — independent engineering, software, and infrastructure.">
+  <title>ZenCore — Systems & Security</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <marquee scrollamount="18">WELCOME TO ZENCORE-SS!!! THE FUTURE IS NOW!!!</marquee>
-  <main class="box">
-    <h1>ZENCORE!!!</h1>
-    <h2>SYSTEMS. SECURITY. OTHER COMPUTER STUFF.</h2>
-    <p>We do the cyber. We do the core. We are extremely online.</p>
-    <button onclick="alert('You have been cybered.')">CLICK FOR CYBER</button>
-    <p>EST. SOME TIME IN THE FUTURE • DEFINITELY A REAL COMPANY</p>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="ZenCore home"><span class="brand-mark"><span></span><span></span><span></span></span><span>ZENCORE<span class="brand-period">.</span></span></a>
+    <nav class="nav-links" aria-label="Main navigation"><a href="#what-we-do">Capabilities</a><a href="#principles">Principles</a><a href="#contact">Contact</a></nav>
+    <a class="header-link" href="#contact">Start a conversation <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+  </header>
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> INDEPENDENT SYSTEMS & SECURITY</div>
+        <h1>Build with intent.<br><span>Engineer</span> with clarity.</h1>
+        <p class="hero-text">Software, systems, and infrastructure shaped around the problem. Thoughtful engineering without the unnecessary theatre.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#what-we-do">Explore capabilities <span>↘</span></a><a class="text-link" href="#principles">Our approach <span>↗</span></a></div>
+        <div class="hero-footnote"><span class="mono">ZC / 001</span><span>Independent by design. Practical by nature.</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Abstract geometric ZenCore system illustration">
+        <div class="visual-grid"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="core"><div class="core-inner">Z<span>C</span></div></div>
+        <div class="visual-tag tag-top"><span class="tag-line"></span> SYSTEMS THINKING</div>
+        <div class="visual-tag tag-bottom"><span class="tag-square"></span> EST. IN PROGRESS</div>
+        <div class="coordinate">44°58' N<br>93°16' W</div><div class="visual-index">FIG. 01 — THE CORE</div>
+      </div>
+    </section>
+    <section class="ticker" aria-label="Areas of focus"><div class="ticker-track">
+      <span>SOFTWARE ENGINEERING</span><i>✳</i><span>SYSTEMS DESIGN</span><i>✳</i><span>SECURITY MINDED</span><i>✳</i><span>OPEN TECHNOLOGY</span><i>✳</i>
+      <span>SOFTWARE ENGINEERING</span><i>✳</i><span>SYSTEMS DESIGN</span><i>✳</i><span>SECURITY MINDED</span><i>✳</i><span>OPEN TECHNOLOGY</span><i>✳</i>
+    </div></section>
+    <section class="section wrap" id="what-we-do">
+      <div class="section-heading"><div><div class="eyebrow">01 / CAPABILITIES</div><h2>Technology should<br>work <em>for</em> you.</h2></div><p class="section-intro">A connected view of the technology stack: from the code people use to the systems that keep it running.</p></div>
+      <div class="capability-grid">
+        <article class="capability-card"><div class="card-top"><span>01</span><span class="card-symbol">⌘</span></div><h3>Software & tools</h3><p>Purpose-built applications, developer tools, automation, and interfaces that solve real problems.</p><div class="card-tags"><span>APPLICATIONS</span><span>AUTOMATION</span></div></article>
+        <article class="capability-card"><div class="card-top"><span>02</span><span class="card-symbol">◈</span></div><h3>Systems engineering</h3><p>Linux environments, infrastructure, deployment workflows, and the architecture beneath the interface.</p><div class="card-tags"><span>LINUX</span><span>INFRASTRUCTURE</span></div></article>
+        <article class="capability-card"><div class="card-top"><span>03</span><span class="card-symbol">⌁</span></div><h3>Security-minded design</h3><p>Practical security thinking built into how systems are designed, configured, and maintained.</p><div class="card-tags"><span>HARDENING</span><span>RESEARCH</span></div></article>
+      </div>
+    </section>
+    <section class="principles" id="principles"><div class="wrap principles-inner">
+      <div class="eyebrow">02 / PRINCIPLES</div><div class="principles-content"><h2>Less noise.<br><span>More signal.</span></h2>
+        <div class="principle-list">
+          <div><span class="principle-number">01</span><p><strong>Understand the system.</strong><br>Good engineering starts with knowing what is actually happening.</p></div>
+          <div><span class="principle-number">02</span><p><strong>Choose the right tool.</strong><br>Complexity is a cost, not a badge of honour.</p></div>
+          <div><span class="principle-number">03</span><p><strong>Make it maintainable.</strong><br>Useful software should remain understandable after the first launch.</p></div>
+        </div>
+      </div><div class="principles-stamp">ZC<br><small>EST. 2026</small></div>
+    </div></section>
+    <section class="contact wrap" id="contact"><div class="eyebrow">03 / NEXT STEP</div><div class="contact-row">
+      <h2>Have a system<br>worth building?</h2><div class="contact-side"><p>ZenCore is taking shape. This prototype is the start of the public-facing home for the work.</p><button class="button button-outline" id="copy-profile" type="button">Copy GitHub profile <span>↗</span></button><p class="copy-feedback" id="copy-feedback" role="status" aria-live="polite"></p></div>
+    </div></section>
   </main>
+  <footer class="site-footer wrap"><a class="brand footer-brand" href="#top"><span class="brand-mark"><span></span><span></span><span></span></span><span>ZENCORE<span class="brand-period">.</span></span></a><span class="footer-note">SYSTEMS & SECURITY — A WORK IN PROGRESS</span><span class="footer-copy">© <span id="year"></span> ZENCORE</span></footer>
 </body>
 </html>
